@@ -1,0 +1,318 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app4.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/histo2.jpg','imagenes/moni2.jpg','imagenes/2T.jpg','imagenes/acti.jpg','imagenes/erupp.jpg')">
+<<div data-role="page" id="Principal" data-theme="a" >
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>VOLCAN POPOCATEPETL</h1>
+   </div>
+   <div data-role="main" class="ui-content" >
+      <div data-role="collapsible" data-content-theme="false" >
+         <h1>POPOCATEPETL</h1>
+          <div>
+          <p>Es un volcán activo localizado en el centro de México, en los límites territoriales de los estados de Morelos, Puebla y México:
+          <br>
+          </div>
+        <div>
+          <img src="imagenes/i.jpg" width=">60%" height="60%" ></div>
+          </div>
+          </div>
+          
+       <div>  
+
+
+   <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>UBICACION</h2>
+   <p>muestra información hacerca de su ubicación. </p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+   <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>TAMAÑO</h2>
+<p>Muestra informacion hacerca de su tamaño.</p>
+</a>
+</li>
+<li clas="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>ANTIGUEDAD</h2>
+<p>Muestra informacion hacerca de su antiguedad. </p>
+  </a>
+  </li>
+ <li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>HISTORIA</h2>
+<p>Muestra su historia o leyenda.</p>
+</a>
+</li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>ACTIVIDAD VOLCANICA</h2>
+    <p>Muestra informacion hacerca de su actividad volcanica.</p>
+    </a>
+   </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>MONITOREO</h2>
+    <p>Muestra su monitoreo.</p>
+    </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>MEDIDAS DE PREVENCION</h2>
+    <p>Muestra informacion hacerca de las medidas de prevencion en caso de caida de ceniza y erupcion.</p>
+    </a>
+   </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>QUE ESTADOS AFECTA</h2>
+    <p>Informacion hacerca de los estados que afecta.</p>
+    </a>
+   </li>
+  </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+<div>
+  <h4>Aplicacion tres</h4>
+ </div>
+<div>
+<img src="imagenes/volcan.jpg" width="46" height="46">
+  <h4>ALBERTO DE LOS SANTOS ROMERO </h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>UBICACION</h1>
+    </div>
+   <div data-role="content" align="center">
+   <div>
+<!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:830px;height:363px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+    <p>Localizado en el centro de México, en los límites territoriales de los estados de Morelos, Puebla y México. Se localiza a unos 72 km al sureste de la Ciudad de México, 43 km de Puebla, 63 km de Cuernavaca, y 53 km de Tlaxcala.</p>
+<img src="imagenes/popo.jpg" width="80%" height="50%">
+  </div>
+ </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Aplicacion tres, ASR</h4>
+</div>
+</div>
+</div> 
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>TAMAÑO</h1>
+ </div>
+<div data-role="content" align="center">
+  <div>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('TAMAÑO','','imagenes/2T.jpg',1)"><img src="imagenes/2TT.jpg" width="800" height="488" id="TAMAÑO"></a>
+<p>Tiene una forma cónica simétrica y está unido por la parte norte con el Iztaccíhuatl mediante un paso montañoso conocido como Paso de Cortés. El volcán tiene glaciares perennes cerca de la boca del cono, en la punta de la montaña. Es el segundo volcán más alto de México, con una altitud máxima de 5500 metros sobre el nivel del mar, sólo después del Citlaltépetl de 5610 msnm 
+   De apariencia casi simétrica, cubre una superficie de 283,192.53 hectáreas y tiene una altura de 5,426 metros sobre el nivel del mar. Posee un cráter elíptico de paredes empinadas con una profundidad de 150 metros desde el labio inferior, un diámetro mayor de 900 metros y un ancho total de 400 x 600 metros.</p>
+ </div>
+ </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+     <h4>Aplicacion tres, ASR</h4>
+     </div>
+  </div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>ANTIGUEDAD</h1>
+  </div>
+<div data-role="content" align="center">
+<div>
+<img src="imagenes/an.jpg" width="50%" height="50%">
+ <p>El popocatepetl, con aproximadamente 730 mil años de edad, ha gozado desde epocas prehispanicas, coloniales y contemporaneas de una importancia tal para las sociedades que con él han convivido, que lo han convertido en fuente de inspiracion de historias, a veces increibles.</p>
+   <img src="imagenes/anti.jpg" width="50%" height="50%">
+  <p>En la cultura tolteca (en 1347), el popocatepetl tuvo por nombre xalliquehuac (arenales que levantan o vuelan). Los mexicas fueron los que le cambiaron el nombre.
+En 1519 el popocatepetl tuvo por nombre popocatzin que significa el gran humeador o el humeadorcito ya que la terminación tzintli es diminutivo afectuoso. También se le conocio como atepetolonhuhuetl, cuyo significado es cerro viejo donde brota agua.</p>
+ <img src="imagenes/an2.jpg" width="50%" height="50%">
+ </div>
+  </div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+     <h4>Aplicacion tres,ASR</h4>
+    </div>
+  </div>
+</div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>HISTORIA</h1>
+  </div>
+  <div data-role="content" align="center">
+ <div>
+ <img src="imagenes/leyenda.jpg" width="50%" height="50%">
+<p>La leyenda de los volcanes es una historia de la mitologia mexica que cuenta con multiples versiones, todas ellas buscan dar explicación a la presencia de los volcanes Popocatépetl e Iztaccíhuatl en el Valle de México.
+En la mitologia mexica, Iztaccihuatl fue una princesa que se enamoró de Popocatepetl, uno de los guerreros de su padre. El padre de la princesa envió al guerrero a una batalla a Oaxaca, prometiéndole entregarle a su hija si regresaba victorioso y con la cabeza de su enemigo en la lanza. Tiempo después el guerrero regresó con la cabeza de su rival sangrando en su lanza, por lo que recibió un festín por su victoria. Sin embargo, su amor se dio por acabado ya que la princesa había muerto. Con el corazón roto llevó el cuerpo de su amada a un monte y los dioses la convirtieron en volcán inactivo. Después, el guerrero tomó una antorcha y prometió que ningún huracán por más fuerte que llevara sus aguas apagaría el fuego con el que vela el cuerpo de su amada. Por esto, los dioses le entregaron la eternidad convirtiéndolo en volcán a cambio de custodiar a la princesa Iztaccíhuatl.Hace ya miles de años, cuando el Imperio Azteca estaba en su esplendor y dominaba el Valle de México, como práctica común sometían a los pueblos vecinos, requiriéndoles un tributo obligatorio. Fue entonces cuando el cacique de los Tlaxcaltecas, acérrimos enemigos de los Aztecas, cansado de esta terrible opresión, decidió luchar por la libertad de su pueblo.
+El cacique tenía una hija, llamada Iztaccíhuatl, era la princesa más bella y depositó su amor en el joven Popocatépetl, uno de los más apuestos guerreros de su pueblo.
+Ambos se profesaban un inmenso amor, por lo que antes de partir a la guerra, Popocatépetl pidió al cacique la mano de la princesa Iztaccíhuatl. El padre accedió gustoso y prometió recibirlo con una gran celebración para darle la mano de su hija si regresaba victorioso de la batalla.
+El valiente guerrero aceptó, se preparó para partir y guardó en su corazón la promesa de que la princesa lo esperaría para consumar su amor.
+Al poco tiempo, un rival de amores de Popocatépetl, celoso del amor de ambos se profesaban, le dijo a la princesa Iztaccíhuatl que su amado había muerto durante el combate.
+Abatida por la tristeza y sin saber que todo era mentira, la princesa murió.</p>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('historia','','imagenes/histo2.jpg',1)"><img src="imagenes/histo.jpg" width="539" height="808" id="historia"></a>
+<p>Comó entre sus brazos el cuerpo de su princesa, lo llevó a la cima y lo recostó inerte sobre la gran montaña.  El joven guerrero le dio un beso póstumo, tomó una antorcha humeante y se arrodilló frente a su amada, para velar así, su sueño eterno.
+  Desde aquel entonces permanecen juntos, uno frente a otro. Con el tiempo la nieve cubrió sus cuerpos, convirtiéndose en dos enormes volcanes que seguirán así hasta el final del mundo.
+  La leyenda añade, que cuando el guerrero Popocatépetl se acuerda de su amada, su corazón que guarda el fuego de la pasión eterna, tiembla y su antorcha echa humo.   Por ello hasta hoy en día, el volcán Popocatépetl continúa arrojando fumarolas.</p>
+    </div>
+   </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Aplicacion tres,ASR</h4>
+   </div>
+  </div>
+ </div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>ACTIVIDAD VOLCANICA</h1> </div>
+ <div data-role="content" align="center">
+<div>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ACTIVIDAD','','imagenes/acti.jpg',1)"><img src="imagenes/act.jpg" width="525" height="350" id="ACTIVIDAD"></a>
+<p>La informacion publicada en esta sección es el resultado del monitoreo del volcán Popocatépetl que se realiza conjuntamente con la Universidad Nacional Autónoma de México. 
+  El reporte se publica diariamente a las 11 de la mañana; en éste se resume la actividad registrada durante las últimas 24 horas, esto es, de 10 de la mañana del día anterior a 10 de la mañana del día en curso. En caso de que ocurra un evento extraordinario se reportará de forma inmediata.</p>
+  <img src="imagenes/ja.jpg" width="50%" height="50%">
+  <p>En las últimas 24 horas, por medio de los registros sísmicos del sistema de monitoreo del volcán Popocatépetl, se identificaron 163 exhalaciones de baja intensidad que solo fueron acompañadas por emisiones de vapor de agua y gases.</p>
+  
+ </div>
+ </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+   <h4>Aplicacion tres,ASR</h4>
+  </div>
+ </div>
+</div>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>MONITOREO</h1>
+ </div>
+ <div data-role="content" align="center">
+<div>
+<img src="imagenes/m.jpg" width="50%" height="50%">
+<p>Cuatro tipos de monitoreo se han establecido en el volcán: visual, sísmico, geodésico y geoquímico, de los cuales el más importante es el sísmico. La red de monitoreo del Popocatépetl está compuesta por 15 estaciones localizadas en las laderas circundantes del volcán en sitios con altitudes de hasta 4300 m y a 1.5 km del cráter.</p>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('monitoreo','','imagenes/moni2.jpg',1)"><img src="imagenes/moni.jpg" width="700" height="466" id="monitoreo"></a>
+<p>La instrumentación consta de 8 sismógrafos triaxiales de periodo corto, 4 de banda ancha, 4 inclinómetros biaxiales para medir deformación, una cámara de video con enlace de microondas, un radar doppler meteorológico y diversos equipos para mediciones geodésicas, análisis químicos y determinación de las concentraciones de gases SO2 y CO2.</p>
+ </div>
+ </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+   <h4>Aplicacion tres,ASR</h4>
+  </div>
+ </div>
+</div>
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Medidas preventivas</h1>
+    </div>
+   <div data-role="content" align="center">
+   <div>
+   
+<div data-role="main" class="ui-content" >
+      <div data-role="collapsible" data-content-theme="false" >
+         <h1>MEDIDAS DE PREVENCION EN CASO DE CAIDA DE CENIZA</h1>
+          <div>
+           <ul>
+<p align="right"><li>No humedecer la ceniza a fin de evitar taponamientos en el sistema de alcantarillado  </li></p>
+<p align="right"><li>Utiliza medios electrónicos y de comunicación para obtener información confiable que den las autoridades de Protección Civil sobre la caída de ceniza y atiende siempre sus instrucciones.  </li></p>
+<p><li>La ceniza volcánica puede ser resbaladiza, sobre todo cuando está mojada. 
+Toma las precauciones necesarias.</li></p>
+<p><li>Cubre tinacos, cisternas y depósitos de agua.</li></p>
+<p><li>Barre y retira la ceniza de techos, azoteas, patios y calles, deposítalas en bolsas y no permitas que se vaya al drenaje.</li></p>
+<p><li>Si es posible no conduzcas, si tienes que hacerlo, hazlo a baja velocidad y con las luces encendidas, ya que la ceniza dificulta la visibilidad y provoca que el pavimento se vuelva resbaloso.</li></p>
+<p><li>Ante la caída de ceniza volcánica evita consumir alimentos en la vía pública.</li></p>
+<p><li>Si permaneces expuesto por algún tiempo a las cenizas volcánicas, al ingresar a tu casa se recomienda cambiar de ropa.</li></p>
+<p><li>Durante la caída de ceniza volcánica, evita que los menores realicen actividades al aire libre.</li></p>
+<p><li>Mantén a tus mascotas en un lugar techado al igual que sus alimentos. Si tus macotas salen, cepíllalos antes de permitirles la entrada nuevamente.</li></p>
+<p><li>La ceniza puede ser usada para parques, jardines, macetas o tierras de cultivo, ya que es rica en minerales.</li></p>
+<p><li>No repitas ni difundas rumores. La ciudad de Puebla se encuentra a una distancia segura, no intentes salir.</li></p>
+<p><li>Usa las vías de comunicación solo en caso de ser necesario.</li></p> 
+</ul>
+          <br>
+          </div>
+        <div><img src="imagenes/re.jpg" width="20%" height="40%"></div>
+        </div>
+      </div>
+          
+          <div data-role="main" class="ui-content" >
+      <div data-role="collapsible" data-content-theme="false" >
+         <h1>MEDIDAS DE PREVENCION EN CASOS DE ERUPCION</h1>
+          <div>
+<p align="right"><li>Mantente alejado de volcanes activos. Si vives cerca de un volcán activo, prepara un kit de emergencia que incluya gafas de seguridad, una máscara, una linterna y una radio en buen estado que funcione con pilas.<br></p></li>
+<p align="right"><li>Elabora una ruta de evacuación y ten el depósito de gasolina del coche siempre lleno.</p></li>
+<p><li>Evacua siguiendo las recomendaciones de lasautoridades para no encontrarte lava y barro, así como rocas y escombros quepuede arrojar el volcán.</p></li>
+<p><li>Evita zonas de ríos y regiones bajas.</p></li>
+<p><li>Antes de abandonar tu casa, ponte una camisa de manga larga y pantalones largos; usa gafas de seguridad o normales, sinlentillas. Ponte unamáscara de emergencia o envuélvete la cara con un paño húmedo.</p></li>
+<p><li>Si no vas a evacuar, cierra puertas y ventanas, y bloquea la chimenea y otros puntos de ventilación para evitar que la ceniza entre en la casa.</p></li>
+<p><li>Ten en cuenta que la ceniza puede sobrecargar el tejado y puedes necesitar retirarla. Durante la limpieza, lleva elementos de protección.</p></li>
+<p><li>La ceniza puede dañar motores y piezas metálicas, así que evita conducir. Si debes conducir, no superes los 55 kilómetros por hora. Share Vídeos ￼ Descenso de lava.</p></li>
+          <br>
+          </div>
+        <div> <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('erup','','imagenes/erupp.jpg',1)"><img src="imagenes/eru2.jpg" width="422" height="119" id="erup"></a></div>
+          </div>
+          </div>
+
+  </div>
+ </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Aplicacion tres, ASR</h4>
+</div>
+</div>
+</div> 
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>QUE ESTADOS AFECTA</h1>
+ </div>
+ <div data-role="content" align="center">
+<div>
+<img src="imagenes/mal.jpg" width="50%" height="50%">
+<p>El Instituto de Geografía se ha encargado de investigar las posibles repercusiones sobre la población por una posible caída de cenizas. Durante el primer semestre de 1995 se analizó la dirección y dimensión de la pluma de cenizas a partir de imágenes del satélite GEOS-8 de los días 22, 26, 27 ,28 y 31 de diciembre de 1994. Con ello se determinó la afectación sobre la población en un radio de 100 kilómetros alrededor del volcán.<br>
+ Gracias a los datos sobre el comportamiento de la atmósfera y la apreciación de los cambios de dirección de la pluma o nube de ceniza revelados por las imágenes de satélite, se deduce que las direcciones sureste, sur y este son las predominantes. Esto se explica por los sistemas de vientos más frecuentes en invierno. Asimismo se estima que en el verano la nube de cenizas cambiaría de dirección dominante hacia el norte o el oeste, completando así un ciclo anual.<br> El espacio territorial que se ha analizado en el estudio es de aproximadamente 15,708 km² y abarca el Distrito Federal, Tlaxcala, Morelos y parcialmente los estados de Hidalgo, México y Puebla.<br> Un caso particular de afectación se presentaría para la Ciudad de México, debido a que las cantidades de ceniza provenientes del Popocatépetl se añadirían a sus condiciones de alta contaminación (se han detectado cuando menos 100 contaminantes en su aire), y por consiguiente habría mayores riesgos para la salud de sus habitantes. </p>
+ </div>
+ </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+   <h4>Aplicacion tres,ASR</h4>
+  </div>
+ </div>
+</div>
+
+</body>
+</html>
